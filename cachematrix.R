@@ -36,7 +36,7 @@ cacheSolve <- function(x, ...) {
     return(matrix_inverse)
   }
   matrix_original <- x$get_matrix_original()
-  matrix_inverse = solve(matrix_original) # this is the expensive part - we already checked the cache
+  matrix_inverse <- solve(matrix_original) # this is the expensive part - we already checked the cache
   x$set_matrix_inverse(matrix_inverse)
   matrix_inverse
 }
