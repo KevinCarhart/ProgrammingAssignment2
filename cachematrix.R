@@ -6,6 +6,8 @@
 ## get_matrix_inverse
 ## I used a short name for the 'private' values in the cache: mo, mi
 ## In a worse/more complex situation, this could help you tell apart what the user sees and how makeCacheMatrix manages the cache
+## Also: when you look in the help for solve(), it talks about hilbert()
+## I don't know hilbert() in detail but it returns a matrix.  So I used hilbert(5), hilbert(6) etc, to make original matrices to test on
 
 makeCacheMatrix <- function(x = matrix()) {
   # naming conventions:
